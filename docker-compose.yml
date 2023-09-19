@@ -1,0 +1,25 @@
+version: '3'
+services:
+    app:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        ports:
+            - "80:80"
+        environment:
+            DB_HOST: db
+            DB_PORT: 3306
+            DB_DATABASE: chawker21
+            DB_USERNAME: root
+            DB_PASSWORD:  #Enter Password
+    db:
+        image: mysql:5.7
+        environment:
+            MYSQL_ROOT_PASSWORD:  #Enter Password
+            MYSQL_DATABASE: chawker21
+        volumes:
+            - ./dump.sql:/docker-entrypoint-initdb.d/dump.sql
+            - mysql_data:/var/lib/mysql  # named volume for MySQL data
+
+volumes:
+    mysql_data:  # named volume
