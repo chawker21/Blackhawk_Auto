@@ -1,0 +1,648 @@
+/* CSS Document */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html body {
+	height:100vh;
+	
+}
+
+.active {
+	background-color:aqua;
+}
+body {
+    background-color:#778899;
+	
+	width:100%;
+
+}
+.inwicust {
+
+	background-color:azure;
+}
+.modalcust {
+
+	display: none;
+
+	-webkit-overflow-scrolling: touch;
+
+}
+.cardshadow {
+	box-shadow: 0px 0px 10px 5px lightsteelblue;
+}
+.cardprop {
+	width: 50rem;
+	margin:40px 0 10px 20px;
+	min-height: 50rem;
+	margin-left:2rem;
+}
+
+/*-------------------- Buttons ----------------------------*/
+.cust-btn {
+	color:azure;
+	background-color:royalblue;
+	border-radius:10px;
+
+	box-shadow: 0px 17px 10px -10px rgba(0,0,0,0.4);
+	cursor: pointer;
+	transition: all ease-in-out 300ms;
+}
+.cust-btn:hover {
+	box-shadow:0px 32px 15px -15px  rgba(0,0,0,0.4);
+	transform: translate(0px, -5px);
+	color:azure;
+}
+
+.lnkveh {
+	border-radius:10px;
+	box-shadow:0px 0px 10px 5px  rgba(24, 221, 167, 0.2);
+	cursor: pointer;
+	transition: all ease-in-out 300ms;
+	text-decoration:none;
+	Margin-bottom:5px;
+}
+.lnkveh:hover {
+	box-shadow:0px 0px 10px 5px  rgba(24, 221, 167, 1);
+	transform: translate(0px, -2px);
+	text-decoration:none;
+}
+.lnkvehprim {
+	border-radius:10px;
+	box-shadow:0px 0px 10px 5px  rgba(65, 105, 225, 0.4);
+	cursor: pointer;
+	transition: all ease-in-out 300ms;
+	text-decoration:none;
+	Margin-bottom:5px;
+}
+.lnkvehprim:hover {
+	box-shadow:0px 0px 10px 5px  rgba(65, 105, 225, 1);
+	transform: translate(0px, -2px);
+	text-decoration:none;
+
+}
+.lnkvehdata {
+	border-radius:10px;
+	box-shadow:0px 0px 10px 5px  rgba(236, 200, 10, 0.2);
+	cursor: pointer;
+	transition: all ease-in-out 300ms;
+	text-decoration:none;
+	Margin-bottom:5px;
+}
+.lnkvehdata:hover {
+	box-shadow:0px 0px 10px 5px  rgba(236, 200, 10, 1);
+	transform: translate(0px, -2px);
+	text-decoration:none;
+}
+
+.lnkvehsafe {
+	border-radius:10px;
+	box-shadow:0px 0px 10px 5px  rgba(0, 213, 203, 0.2);
+	cursor: pointer;
+	transition: all ease-in-out 300ms;
+	text-decoration:none;
+	Margin-bottom:5px;
+}
+.lnkvehsafe:hover {
+	box-shadow:0px 0px 10px 5px  rgba(0, 213, 203, 1);
+	transform: translate(0px, -2px);
+	text-decoration:none;
+}
+.lnkdest {
+	border-radius:10px;
+	box-shadow:0px 0px 10px 5px  rgba(201, 48, 44, 0.2);
+	cursor: pointer;
+	transition: all ease-in-out 300ms;
+	text-decoration:none;
+	Margin-bottom:5px;
+}
+.lnkdest:hover {
+	box-shadow:0px 0px 10px 5px  rgba(201, 48, 44, 1);
+	transform: translate(0px, -2px);
+	text-decoration:none;
+}
+.lnkvehmar {
+	margin-top:20px;
+	min-width: 100%;
+}
+.chk-btn {
+	border-radius:10px;
+	box-shadow:0px 0px 10px 5px  rgba(65, 105, 225, 0.4);
+	cursor: pointer;
+	transition: all ease-in-out 300ms;
+}
+.chk-btn:hover {
+	box-shadow:0px 0px 10px 5px  rgba(65, 105, 225, 1);
+	transform: translate(0px, -2px);
+}
+.lnk:link {
+	color:royalblue;
+}
+.lnk:visited {
+	color:royalblue;
+}
+.lnkaddveh {
+	float:left;
+}
+
+/*------------------- End Buttons ----------------------------*/
+.count {
+	color:darkorange;
+	display:inline-block;
+}
+
+
+.shwimg {
+	text-align:center;
+}
+
+#app{
+	min-height:80vh;
+}
+
+.wrapper {
+	height:100%;
+	margin:0 auto -4em auto
+}
+.footer {
+	color:azure;
+	padding: 30px;
+	box-shadow: 0px 0px 15px 15px lightsteelblue;
+	height:500px;
+	background-color: #222222;
+	width: 100%;
+	clear:both;
+	
+}
+.navbar {
+	box-shadow: 0px 0px 15px 10px lightsteelblue;
+}
+#boxshd {
+	box-shadow: 0px 0px 15px 10px lightsteelblue;
+	border: 15px;
+	border-style:solid;
+	border-color:#222222;
+}
+.carocent {
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform: translate(93%, -50%);
+}
+.carowidth {
+	width:35%;
+}
+.showwidth {
+	width:70%;
+}
+/*-------------------- Index page styles --------------------*/
+.cust-name a{
+	color:royalblue;
+
+	box-shadow: 0px 10px 10px -6px rgba(6,18,221,0.2);
+	font-size:18px;
+	text-decoration:none;
+	transition: all ease-in-out 300ms;
+}
+.cust-name a:hover {
+	text-shadow:1px 0px 0px;
+	box-shadow:0px 15px 12px -8px  rgba(6,18,221,0.4);
+
+	border-radius: 5px;
+	text-decoration: none;
+
+}
+.tb-row {
+	height:65px;
+}
+div.bg-cust:nth-child(even)
+{
+	font-weight:bold ;
+	color:black;
+	background-color: #343a40;
+}
+div.bg-cust:nth-child(odd)
+{
+	font-weight:bold ;
+	color:black;
+	background-color: #222222;
+}
+.table-col-links {
+
+	padding-left: 15px;
+	float:left;
+}
+.table {
+	margin-left:50px;
+	font-weight:bold ;
+	font-size:18px;
+	color:black;
+	box-shadow: 0px 0px 15px 10px lightsteelblue;
+
+}
+.table > tbody > tr > td {
+	height:65px;
+}
+.tablesum {
+	margin-left:70px;
+	font-weight:bold ;
+	font-size:18px;
+	color:black;
+	width:20%;
+}
+
+/*----------------- End Index page styles -----------------*/
+
+iframe {
+	display:block;
+	overflow:auto;
+
+width:100%;
+	margin:0;
+}
+.form-control {
+	background-color: #ffffff;
+
+}
+.form-control:focus {
+	background-color:whitesmoke;
+	box-shadow: 0px 0px 5px 3px lightsteelblue;
+}
+.ifwidth {
+	width: 200px;
+}
+.inwi {
+	width:180px;
+	height:20px;
+	display:inline-block;
+}
+
+
+#First_Name {
+	 width:160px;
+ }
+#Last_Name {
+	width:160px;
+}
+#Phone_Number {
+	 width:160px;
+ }
+#Vehicle_Year {
+	width:160px;
+}
+#Vehicle_Model {
+	width:160px;
+}
+#VIN {
+	width:160px;
+	font-size:13px;
+}
+#Vehicle_Make {
+	width:130px;
+}
+.ipad {
+	display:none;
+}
+
+custnote {
+	
+	display:inline-block;
+}
+
+.left {
+	float:left;
+}
+
+.navbar-inverse {
+	background-color:#222222;	
+}
+.post {
+	color:#636b6f;
+	font-weight:bold;
+	font-size:18px;
+
+}
+#logout-form {
+	display: none;
+}
+#logoutdrp {
+	margin-right:50px;
+}
+div.post {
+
+	background-color: #222222;
+
+	font-family: Gotham;
+}
+
+.footimg {
+	height:200px;
+	width:267px;
+	box-shadow: 0px 0px 15px 7px lightsteelblue;
+	margin-bottom:15px;
+}
+.headimg {
+	margin-right:20px;
+	box-shadow: 0px 0px 15px 7px lightsteelblue;
+
+}
+
+
+div.post:hover {
+	opacity: 1.0;
+}
+
+.CheckOut {
+
+	display:none;
+}
+
+
+
+div.tableBanner {
+	display:block;
+	margin:5px 0 5px 50px;	
+}
+
+
+.invdeco {
+	list-style-type: none;
+}
+.ve-btn{
+	display:inline-table;
+}
+.VIN{
+	margin-top:50px;
+}
+.VINtext {
+	font-size:14px;
+	color:black;
+}
+.vtable {
+
+	font-family: Gotham;
+	text-align:center;
+
+	box-shadow: 0px 0px 15px 10px lightsteelblue;
+
+}
+.well {
+	box-shadow: 0px 0px 15px 7px lightsteelblue;
+	text-align: center;
+}
+
+#sidebar {
+
+	transition:margin-right .5s linear;
+}
+#sidebar.sidebar-collapse {
+margin-right: -210px;
+	transition:margin-right .5s linear;
+}
+
+#sidebar-btn{
+	display:inline-block;
+	vertical-align:middle;
+	width:20px;
+	height:15px;
+	margin-right:260px;
+	float:right;
+
+}
+#sidebar-btn span {
+
+	height:1px;
+	background: #111;
+	margin-bottom:5px;
+	display:block;
+}
+#sidebar-btn span:nth-child(2){
+	width:75%;
+}
+.WIP {
+	padding:5px;
+	margin:0 0 0 50px;
+	color:black;
+}
+
+
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px)
+and (orientation : portrait) {
+	.table {
+		margin-left:0px;
+		font-weight:normal;
+		font-size:6px;
+
+
+	}
+	.cust-name a{
+		font-size:6px;
+	}
+
+	.cust-name a:visited {
+		font-size:6px;
+	}
+	.VINtext {
+		font-size:6px;
+		font-weight:normal;
+	}
+	.vtable {
+		margin: 0px 10px 30px 0px;
+		font-size:10px;
+	}
+	.lnkveh {
+		vertical-align:90%;
+	}
+
+	.btn-xs {
+		font-size:8px;
+	}
+	.inwi {
+		margin-top:0px;
+		width:60px;
+		height:20px;
+
+	}
+	.footimg {
+		height: 50px;
+		width: 66px;
+	}
+
+}
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px)
+and (orientation : landscape) {
+	.table {
+		margin-left:10px;
+		font-weight:normal;
+		font-size:8px;
+
+
+	}
+	.cust-name a{
+		font-size:8px;
+	}
+
+	.VINtext {
+		font-size:9px;
+		font-weight:normal;
+	}
+	.vtable {
+		margin: 0px 10px 30px 0px;
+	}
+
+	.inwi {
+		margin-top:0px;
+		width:60px;
+		height:20px;
+
+	}
+	.lnkveh {
+		vertical-align:70%;
+	}
+	.btn-xs {
+		font-size:10px;
+	}
+	.footimg {
+		height: 50px;
+		width: 66px;
+	}
+}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px)
+and (orientation : landscape) {
+	.table {
+		margin-left:10px;
+		font-weight:normal;
+		font-size:12px;
+	}
+	.cardprop {
+
+		margin:40px 0 10px 0;
+
+		margin-left:0rem;
+	}
+
+
+
+
+	.well {
+		min-width:20%;
+		font-size:8px;
+	text-align:left;
+	}
+	.dl-horizontal dt {
+			 text-align:left;
+		 }
+	.dl-horizontal dt dd{
+	margin-left:0px;
+	}
+
+
+	.cust-name a{
+		font-size:12px;
+	}
+
+	.VINtext {
+		font-size:9px;
+		font-weight:normal;
+	}
+	.vtable {
+		margin: 0px 10px 30px 0px;
+	}
+
+	.inwi {
+		margin-top:0px;
+		width:60px;
+		height:20px;
+
+	}
+	.carocent {
+		display:none;
+	}
+	.lnkveh {
+		vertical-align:70%;
+	}
+	.btn-xs {
+		font-size:10px;
+	}
+	.footimg {
+		height: 100px;
+		width: 133px;
+	}
+
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px)
+and (orientation : portrait) {
+
+	.table {
+		margin-left:0px;
+		font-weight:normal;
+		font-size:8px;
+
+
+	}
+
+	.cardprop {
+		width: 30rem;
+		margin:40px 0 10px 0;
+		min-height: 100rem;
+		margin-left:0rem;
+	}
+
+
+	.cust-name a{
+		font-size:8px;
+	}
+.PNBR {
+	display:none;
+}
+#Vehicle_Make {
+	width:100px;
+}
+.ipad {
+	display:block;
+}
+	.VINtext {
+		font-size:6px;
+		font-weight:normal;
+	}
+	.vtable {
+		margin: 0px 10px 30px 0px;
+		font-size:10px;
+
+	}
+	.table > tbody > tr > td {
+		height:auto;
+	}
+
+	#Vehicle_Year {
+		width:100px;
+	}
+
+
+	.lnkveh {
+		vertical-align:90%;
+	}
+
+	.btn-xs {
+		font-size:8px;
+	}
+	.inwi {
+		margin-top:0px;
+		width:60px;
+		height:20px;
+
+	}
+	.footimg {
+		height: 100px;
+		width: 133px;
+	}
+
+
+}

@@ -1,0 +1,134 @@
+/* CSS Document */
+.customer-card-prop {
+    width:35rem;float:left;
+    margin:0px 0 20px 15px;
+    min-height: 60rem;
+
+}
+
+.cardheader {
+    font-size: 24px;
+    color: darkorange;
+}
+.cardmodalheader {
+    font-size:22px;
+    color: #5075e3
+}
+.card-modal-title {
+    font-size:16px;
+    color:orange;
+}
+.card-modal-prop {
+    max-width: 30rem;
+    margin-left:15px;
+}
+
+.carddash {
+    border-color:darkorange;
+    border-style:dashed;
+}
+.carddot {
+    border-color:orange;
+    border-style:dotted;
+}
+/*font-size*/
+.f-14 {
+    font-size:14px;
+}
+.f-16 {
+    font-size:16px;
+}
+
+/*
+margins, widths and floats
+*/
+.m-l-30 {
+    margin-left:30%;
+}
+.m-l-50p {
+    margin-left:50px;
+}
+.m-t-20 {
+    margin-top:20%;
+}
+.m-t-20p {
+    margin-top:20px;
+}
+.notewidth {
+    max-width:70%;
+}
+.m-0p {
+    margin:0px;
+}
+.m-bt-2 {
+    margin:2px 0 2px 0;
+}
+.card-col-90 {
+    width:90%;
+}
+.cardsubheader {
+    color: darkorange;
+    margin-top: 0;
+}
+
+.btn-upload {
+    margin-right:20px;
+    width:120px;
+}
+
+.flo-r {
+    float:right;
+}
+.flo-l {
+    float:left;
+}
+.clboth {
+    clear:both;
+}
+
+.center {
+    text-align:center;
+}
+
+.form-input-prop {
+    width:220px;
+    margin-left:15px;
+}
+
+/*colors*/
+.lime {
+    color:limegreen;
+}
+.orange {
+    color:orange;
+}
+.modalmycss {
+
+    display: none;
+    overflow: hidden;
+    position: fixed;
+    top: 10%;
+    right: 0;
+    bottom: 0;
+    left: 30%;
+    z-index: 1050;
+    -webkit-overflow-scrolling: touch;
+    outline: 0;
+    width:900px;
+    height:960px;
+}
+.modalmyinvoicecss {
+
+    display: none;
+    overflow: hidden;
+    position: fixed;
+    top: 10%;
+    right: 0;
+    bottom: 0;
+    left: 30%;
+    z-index: 1050;
+    -webkit-overflow-scrolling: touch;
+    outline: 0;
+    width:900px;
+    height:960px;
+}
