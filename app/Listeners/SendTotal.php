@@ -26,7 +26,7 @@ class SendTotal
      */
     public function handle(CheckTotal $event)
     {
-        var_dump($event->week)
+        var_dump($event->week) . PHP_EOL;
 
 
         }

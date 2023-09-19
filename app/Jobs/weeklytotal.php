@@ -52,5 +52,5 @@ class weeklytotal implements ShouldQueue
 
 
     } //
-    }
+
 }
