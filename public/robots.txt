@@ -1,2 +1,30 @@
+# robots.txt
+# This file is used to instruct robots (web crawlers) how to crawl & index pages on the website.
+
+# Allow all bots to access the whole site
 User-agent: *
 Disallow:
+
+# Alternatively, you can disallow all bots from accessing the site
+# User-agent: *
+# Disallow: /
+
+# Block a specific bot from crawling your site
+# User-agent: BadBot
+# Disallow: /
+
+# Block access to specific directories or files
+# User-agent: *
+# Disallow: /private/
+# Disallow: /private/file.txt
+
+# Allow crawling of all files in the /public/ folder
+# User-agent: *
+# Allow: /public/
+
+# Crawl-delay parameter to make sure you don't overload your site (measured in seconds)
+# User-agent: *
+# Crawl-delay: 10
+
+# Sitemap information
+Sitemap: http://35.164.36.90/sitemap.xml
