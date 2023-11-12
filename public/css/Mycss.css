@@ -1,4 +1,6 @@
 /* CSS Document */
+
+
 * {
 	margin: 0;
 	padding: 0;
@@ -7,15 +9,55 @@
 
 html body {
 	height:100vh;
-	
+
 }
+/* Custom class for the customer card */
+.customer-card {
+    width: 35rem;
+    float: left;
+    margin: 0px 0 20px 15px;
+    min-height: 60rem;
+}
+
+/* Custom class for index number */
+.index-number {
+    float: right;
+}
+
+/* Custom class for phone number */
+.phone-number {
+    margin-bottom: 0;
+    color: #ff8c00;  /* Orange color */
+}
+/* Custom styles for buttons and modals */
+.btn-custom {
+    margin-left: 50%;
+}
+
+.modal-custom {
+    tabindex: -1;
+}
+
+/* Custom styles for horizontal rule */
+.hr-custom {
+    margin-bottom: 2rem;
+}
+
+/* Additional styles */
+.clboth {
+    clear: both;
+}
+
+
+
+
 
 .active {
 	background-color:aqua;
 }
 body {
     background-color:#778899;
-	
+
 	width:100%;
 
 }
@@ -174,7 +216,7 @@ body {
 	background-color: #222222;
 	width: 100%;
 	clear:both;
-	
+
 }
 .navbar {
 	box-shadow: 0px 0px 15px 10px lightsteelblue;
@@ -307,7 +349,7 @@ width:100%;
 }
 
 custnote {
-	
+
 	display:inline-block;
 }
 
@@ -316,7 +358,7 @@ custnote {
 }
 
 .navbar-inverse {
-	background-color:#222222;	
+	background-color:#222222;
 }
 .post {
 	color:#636b6f;
@@ -363,7 +405,7 @@ div.post:hover {
 
 div.tableBanner {
 	display:block;
-	margin:5px 0 5px 50px;	
+	margin:5px 0 5px 50px;
 }
 
 

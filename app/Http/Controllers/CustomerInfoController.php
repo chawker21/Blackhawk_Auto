@@ -74,6 +74,9 @@ class customerInfoController extends Controller
         $this->validate($request, [
             'Additional_info' => 'max:600'
         ]);
+        // Read the JSON file
+        $json_str = File::get(storage_path('path/to/vehicle_makes.json')); // Replace 'path/to' with the actual path
+        $vehicle_makes = json_decode($json_str, true);
         customer_info::NewVehicle($request, $id);
 
         return redirect::back();

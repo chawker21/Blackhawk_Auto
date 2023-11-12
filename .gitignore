@@ -15,3 +15,7 @@ yarn-error.log
 /.idea
 /.vscode
 /mySQLbackups/
+/000-default_Auto.conf
+/docker-compose_Auto.yml
+/Dockerfile_Auto
+/dump.sql
