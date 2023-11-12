@@ -20,7 +20,7 @@
         </div>
         <div id="CustomerCard" style="clear:both;">
 
-            @include('foreachloops._cuatomer_main_card_loop_old', ['current' => 1, 'dispnone' => '', 'chadnote' => 'Add Note'])
+            @include('foreachloops._cuatomer_main_card_loop', ['current' => 1, 'dispnone' => '', 'chadnote' => 'Add Note'])
         </div>
 
     </div>
