@@ -41,9 +41,20 @@ class customerInfoController extends Controller
         $customer_vehicle = customer_info::with('customer_vehicles')->get();
         $customer_note = customer_info::with('customer_notes')->get();
         $invoices = customer_vehicle::with('invoices')->get();
-       $invoiceTotals = invoice::invoiceTotals();
-       // return view('pages.homepage.home', compact('customer_infos', 'SMSbody', 'customer_vehicle', 'customer_note'));
-        return view('pages.homepage.home', compact('customer_infos', 'SMSbody', 'customer_vehicle', 'customer_note', 'invoiceTotals', 'invoices'));
+        $invoiceTotals = invoice::invoiceTotals();
+
+        // Fetch or define your $vehicle_makes data here
+        $vehicle_makes = [/* Your vehicle makes data here */];
+
+        return view('pages.homepage.home', compact(
+            'customer_infos',
+            'SMSbody',
+            'customer_vehicle',
+            'customer_note',
+            'invoiceTotals',
+            'invoices',
+            'vehicle_makes' // Pass the $vehicle_makes variable to the view
+        ));
     }
 
     /*------------------ queries database for all records of customers ------------------*/
@@ -51,9 +62,9 @@ class customerInfoController extends Controller
     {
         $Querys = $request->input('query');
         $customer_infos = customer_info::searcher($request, $Querys);
+        $vehicle_makes = [/* Your vehicle makes data here */];
 
-
-        return view('pages.index', ['customer_infos' => $customer_infos, 'query' => $Querys]);
+        return view('pages.index', ['customer_infos' => $customer_infos, 'query' => $Querys, 'vehicle_makes' => $vehicle_makes]);
     }
 
     /*-------------- Stores newly created customer info to Database, button found on current work in progress page ---------------*/
@@ -96,9 +107,10 @@ class customerInfoController extends Controller
         $customer_vehicle = customer_info::with('customer_vehicles')->find($id)->customer_vehicles;
         $current_vehicle = $customer_vehicle->where('Checked_in', '==', 1);
         $customer_note = customer_info::with('customer_notes')->find($id)->customer_notes;
+        // Fetch or define your $vehicle_makes data here
+        $vehicle_makes = [/* Your vehicle makes data here */];
 
-
-        return view('pages.show', compact('customer_info', 'invoices', 'total', 'customer_vehicle', 'customer_note', 'data', 'current_vehicle'));
+        return view('pages.show', compact('customer_info', 'invoices', 'total', 'customer_vehicle', 'customer_note', 'data', 'current_vehicle', 'vehicle_makes')); // Pass the $vehicle_makes variable to the view));
     }
 
     public function edit(Request $request, $id)
