@@ -5,58 +5,85 @@
     <title>LAMP Server Installation Guide</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
             color: #333;
+            line-height: 1.7;
             text-align: center;
         }
+
         .container {
             width: 80%;
             margin: auto;
             overflow: hidden;
         }
+
         header {
-            background: #50b3a2;
-            color: white;
-            padding-top: 30px;
-            min-height: 70px;
-            border-bottom: #e8491d 3px solid;
+            background: #444444;
+            color: #f0f0f0;
+            padding: 20px 0;
+            border-bottom: 3px solid #e8491d;
         }
+
         header a {
-            color: #ffffff;
+            color: #f0f0f0;
             text-decoration: none;
-            text-transform: uppercase;
-            font-size: 16px;
+            font-size: 18px;
+            transition: color 0.3s ease;
         }
+
         header ul {
             padding: 0;
             list-style: none;
             text-align: center;
         }
+
         header li {
             display: inline;
-            margin: 0 20px;
+            margin: 0 15px;
         }
-        header #branding {
-            float: left;
-        }
+
         header #branding h1 {
             margin: 0;
+            font-size: 32px;
         }
+
         header nav {
-            float: right;
             margin-top: 10px;
         }
+
         header .highlight, header .current a {
             color: #e8491d;
             font-weight: bold;
         }
+
         header a:hover {
             color: #ffffff;
             font-weight: bold;
         }
+
+        h2 {
+            color: #333;
+            font-weight: bold;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 17px;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
     </style>
 </head>
 <body>
@@ -77,8 +104,9 @@
 <div class="container">
     <h2>Welcome to the Easy-to-Follow LAMP Server Installation Guide</h2>
     <p>This guide provides step-by-step instructions on how to install a LAMP (Linux, Apache, MySQL, PHP) server on your Linux system. It's designed for beginners and includes copy buttons for each command, making it easy to use and follow.</p>
-    <p><a href="http://35.164.36.90/GraphicalDocument.php">Click here to start the installation process!</a></p>
+    <p><a href="http://35.164.36.90/GraphicalDocument.php">Click here to start the guide to the installation process!</a></p>
 </div>
 </body>
 </html>
+
 
