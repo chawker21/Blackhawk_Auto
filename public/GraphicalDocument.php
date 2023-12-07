@@ -120,6 +120,48 @@
             width: 100%;
             height: auto;
         }
+        footer {
+            background-color: #444444;
+            color: #f0f0f0;
+            text-align: center;
+            padding: 15px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            font-size: 16px;
+        }
+
+        footer p {
+            margin: 0;
+            padding: 0;
+        }
+
+        footer .custom-alert {
+            background-color: #d1ecf1;
+            color: #0c5460;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+            border-left: 5px solid #0c5460;
+            text-align: left;
+        }
+
+        footer button {
+            background-color: #007bff;
+            color: white;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+            transition: background-color 0.3s ease;
+            margin-top: 5px;
+        }
+
+        footer button:hover {
+            background-color: #0056b3;
+        }
+
     </style>
 
     <!-- Include any external CSS or JS here -->
@@ -472,13 +514,14 @@ max_execution_time=600</pre>
         <p>This journey has equipped you with a robust server, capable of hosting dynamic websites and applications, powered by the versatility of Linux, Apache, MySQL, and PHP, and enhanced by the elegance of Laravel. Your diligence and effort in following these steps have set the foundation for a powerful web development environment. Embrace the opportunities this setup offers, and let your web development creativity flourish!</p>
 
         <footer>
-    <p>Created by: Chris Hawker for English 2100 SLCC / Graphical Document</a></p>
-    <div id="customAlert" class="custom-alert" style="display: none;">
-        <p id="alertMessage"></p>
-        <button onclick="closeAlert()">OK</button>
-    </div>
+            <p>Created by: Chris Hawker for English 2100 SLCC / Graphical Document</p>
+            <div id="customAlert" class="custom-alert alert-info" style="display: none;">
+                <p id="alertMessage"></p>
+                <button onclick="closeAlert()">OK</button>
+            </div>
+        </footer>
 
-    <script>
+        <script>
         function copyToClipboard(element) {
             var text = document.querySelector(element).innerText;
             var elem = document.createElement("textarea");
